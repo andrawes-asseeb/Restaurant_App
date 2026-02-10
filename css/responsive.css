@@ -1,0 +1,99 @@
+
+@media (max-width: 1200px) {
+  /* start slider responsive  */
+  main  header nav .links {
+    display: none;
+  }
+
+  main header nav .menu {
+    display: block;
+  }
+
+  main header .drop-down-menu .links {
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+  }
+
+  main header .drop-down-menu {
+    display: flex;
+  }
+  /* End slider responsive  */
+}
+
+@media (max-width: 1100px) {
+  /* Start footer */
+  main footer .container .items {
+    flex-direction: column;
+  }
+  /* End footer */
+}
+
+
+@media (max-width: 900px) {
+  /* Start about section  */
+    main .about {
+      flex-direction: column;
+    }
+
+    main .about .context {
+      margin-right: unset;
+    }
+
+    main .about img {
+      height: 400px;
+    }
+  /* Start about section  */
+}
+
+
+@media (max-width: 650px) {
+  /* start slider responsive  */
+    main .section-land .slider-show div {
+      width: 100%;
+    }
+
+    main .section-land .slider-show div h2 {
+      font-size: 2.5rem;
+    }
+  /* end slider responsive  */
+
+  /* start Offer reponsive */
+    main .offer-section .offers .card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    main .offer-section .offers .card * {
+      line-height: 50px;
+    }
+
+    main .offer-section .offers .card .image {
+      margin: unset;
+    }
+  /* End Offer reponsive */
+
+  /* Start Customer reponsive */
+    main .customer-views .cards .image img {
+      width: 300px;
+    }
+  /* End Customer reponsive */
+
+  /* start book table section */
+    main .book-table {
+      padding: 20px;
+    }
+
+    main .book-table form,
+    main .book-table h2 {
+      width: 100%;
+    }
+  /* end book table section */
+
+  /* start menu section responsive */
+    main .menu-sec .menu-links ul {
+      flex-direction: column;
+    }
+  /* end menu section responsive */
+}
+/* End slider responsive  */

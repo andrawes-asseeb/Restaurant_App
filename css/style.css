@@ -1,0 +1,654 @@
+
+/* Start General stylings */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+:root {
+  --main-color: #ffbe33;
+  --main-bg-color: #e69c00;
+  --main-bg-color2: #222831;
+}
+
+.main-spacing {
+  padding: 30px 20px;
+}
+
+.main-heading-stylings {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.main-font-family {
+  font-family: "Dancing Script", cursive;
+}
+
+.main-button-stylings {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #ffbe33;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main  header nav .links ul li a.active,
+main  header .drop-down-menu .links ul li a.active,
+main  header nav .links ul li a:hover,
+main  header .drop-down-menu .links ul li a:hover,
+main  header nav .links .search .user-active a i:hover,
+main  header .drop-down-menu .links .search .user-active a i:hover {
+  color: var(--main-color) ;
+}
+
+main  header nav .links .search .order-on button:hover,
+main  header .drop-down-menu .links .search .order-on button:hover,
+main .section-land .slider-show div .order-now:hover {
+  background-color: var(--main-bg-color)
+}
+
+.mood i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* End General stylings */
+
+/* start land page section */
+
+main .section-land {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+/* start header */
+
+main header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main  header nav,
+main  header .drop-down-menu  {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main  header nav .links,
+main  header .drop-down-menu .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+main  header nav .links ul,
+main  header .drop-down-menu .links ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main  header nav .links ul li a,
+main  header .drop-down-menu .links ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+main  header nav .links .search *:not(button),
+main  header .drop-down-menu .links .search *:not(button) {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* Start styling menu for reponsive design */
+
+main  header nav .menu {
+  display: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+main  header nav .menu span {
+  display: block;
+  height: 5px;
+  width: 40px;
+  background-color: #DDD;
+  margin: 5px 0;
+  border-radius: 30px;
+}
+
+main  header .drop-down-menu {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  justify-content: center;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+main  header .drop-down-menu .links,
+main  header .drop-down-menu .links ul {
+  flex-direction: column;
+}
+
+/* End styling menu for reponsive design */
+
+/* end header */
+
+/* Start Slider Show */
+
+main .section-land .slider-show {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 85%;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+main .section-land .slider-show div {
+  position: absolute;
+  width: 100%;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+main .section-land .slider-show div:nth-child(1) {
+  right: 0%;
+}
+main .section-land .slider-show div:nth-child(2) {
+  right: -100%;
+}
+main .section-land .slider-show div:nth-child(3) {
+  right: -100%
+}
+
+main .section-land .slider-show div h2 {
+  font-size: 3.5rem;
+}
+
+main .section-land .slider-show div p {
+  line-height: 20px;
+  font-size: 14px;
+  width: 400px;
+  margin: 10px 0;
+}
+
+main .section-land .slider-show div .order-now {
+  margin-top: 10px;
+}
+
+/* start slider controls */
+
+main .section-land .slider-controls {
+  margin: 0 auto;
+  width: 80px;
+}
+
+main .section-land .slider-controls span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+main .section-land .slider-controls span.active {
+  transform: scale(1.5);
+  background-color: #ffbe33;
+} 
+
+/* end slider controls */
+
+/* End Slider Show */
+
+/* End land page section */
+
+/* Start Offer Section */
+
+main .offer-section .offers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .offer-section .offers .card {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg-color2);
+  width: 550px;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+main .offer-section .offers .card .image {
+  border: 5px solid #ffbe33;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+main .offer-section .offers .card .image img {
+  width: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main .offer-section .offers img:hover {
+  transform: scale(1.2);
+}
+
+main .offer-section .offers .card .text *:not(i, button) {
+  font-family: 'Dancing Script', cursive;
+}
+
+main .offer-section .offers .card .text h3 {
+  font-size: 24px;
+}
+
+main .offer-section .offers .card .text p span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+/* End Offer Section */
+
+/* Start Customer Views */
+
+main .customer-views .cards {
+  text-align: center;
+}
+
+main .customer-views .cards p {
+  background-color: var(--main-bg-color2);
+  padding: 25px;
+  width: fit-content;
+  margin: 30px auto;
+  text-align: left;
+  border-radius: 5px;
+}
+
+main .customer-views .cards p span {
+  display: inline-block;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+main .customer-views .cards .image img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--main-color);
+}
+
+/* End Customer Views */
+
+/* Start Footer */
+
+main footer {
+  background-color: var(--main-bg-color2);
+}
+
+main footer .container .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+main footer .container .items .item {
+  width: 300px;
+  line-height: 25px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+main footer .container .items .item h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main footer .container .items .item1 *:not(h4),
+main footer .container .items .item3 *:not(h4)  {
+  line-height: 30px;
+}
+
+main footer .container .items .item1 p:hover,
+main footer .container .items .item1 p:hover i {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+main footer .container .items .item2 p,
+main footer .container .items .item3 *:not(h4) {
+  color: #dbdbdb;
+}
+
+main footer .container .items .item2 .contacts a {
+  display: inline-block;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #DDD;
+}
+
+main footer .container .items .item2 .contacts a i {
+  color: var(--main-bg-color2);
+}
+
+main footer .container .items .item2 .contacts a i:hover {
+  color: var(--main-color);
+}
+
+
+main footer .container .copyRight-section p {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+/* End Footer */
+
+
+/* Start about section */
+
+main .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 90px 20px;
+  margin-left: -20px;
+  box-shadow: 0 35px 0 var(--main-bg-color2);
+}
+
+main .about * {
+  color: black;
+  margin: 25px;
+}
+
+main .about img {
+  height: 600px;
+}
+
+main .about .context {
+  line-height: 25px;
+}
+
+main .about .context h3 {
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+
+/* End about section */
+
+/* Start book table section */
+
+main .book-table {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 90px;
+  box-shadow: 0 35px 0 white;
+}
+
+main .book-table *:not(button) {
+  color: black;
+}
+
+main .book-table form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  width: 500px;
+}
+
+main .book-table form input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  outline: none;
+  margin: 20px 0;
+}
+
+main .book-table form button {
+  align-self: start;
+  padding: 15px 55px;
+  font-size: 20px;
+}
+
+
+/* End book table section */
+
+/* start menu section */
+
+main .menu-sec {
+  margin-top: 50px;
+}
+
+main .menu-sec .menu-links {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+main .menu-sec .menu-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+main .menu-sec .menu-links ul li {
+  color: black;
+  padding: 15px 25px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+main .menu-sec .menu-links ul li:hover {
+  background-color: var(--main-bg-color2);
+  color: white;
+}
+
+main .menu-sec .menu-links ul li.active {
+  background-color: var(--main-bg-color2);
+  color: white;
+}
+
+main .menu-sec .menu-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
+  transition: all 0.4s ease;
+  justify-content: center;
+  grid-auto-flow: dense;
+  gap: 50px;
+  padding: 20px;
+}
+
+main .menu-sec .menu-table .item {
+  background-color: var(--main-bg-color2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main .menu-sec .menu-table .item.hidden {
+  display: none
+}
+
+main .menu-sec .menu-table .item p {
+  line-height: 25px;
+}
+
+main .menu-sec .menu-table .item *:not(.image, i) {
+  padding: 15px 20px;
+}
+
+main .menu-sec .menu-table .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDD;
+  width: 100%;
+  height: 200px;
+  border-bottom-left-radius: 50px;
+} 
+
+main .menu-sec .menu-table .image img {
+  height: 170px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .menu-sec .menu-table .image img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0px 5px var(--main-bg-color)); 
+}
+
+main .menu-sec .menu-table .item .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .menu-sec .menu-table .item .foot a {
+  text-align: center;
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main .menu-sec .menu-table .item .foot span {
+  font-weight: bold;
+}
+
+/* End menu section */
+
+
+/* Start customizing dark mood */
+
+body[mood='dark'] *:not(
+  .section-land *, 
+  main a, 
+  main i,
+  main button,
+  main img
+  ) {
+  background-color: var(--main-bg-color2) !important;
+  color: #DDD;
+}
+
+body[mood='dark'] main .offer-section .offers .card {
+  border: 1px solid var(--main-color);
+}
+
+body[mood='dark'] main .customer-views .cards div p {
+  border: 1px solid var(--main-color);
+}
+
+body[mood='dark'] main .about {
+  background-color: var(--main-bg-color2);
+}
+
+body[mood='dark'] main .about *,
+body[mood='dark'] main .menu-sec .menu-links ul li {
+  color: white;
+}
+
+body[mood='dark'] main .book-table {
+  background-color: var(--main-bg-color2);
+  box-shadow: 0 35px 0 var(--main-bg-color2);
+}
+
+body[mood='dark'] main .book-table * {
+  color: white;
+}
+
+body[mood='dark'] main .book-table form input {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: white;
+  border-radius: 5px;
+}
+
+body[mood='dark'] main .menu-sec .menu-table .item {
+  border: 1px solid var(--main-color);
+}
+
+body[mood='dark'] main .menu-sec .menu-links ul li.active,
+body[mood='dark'] main .menu-sec .menu-links ul li:hover {
+  background-color: var(--main-bg-color) !important;
+}
+
+/* End customizing dark mood */
+
+/* header stylings for scrolling */
+
+.header-special-scroll {
+  position: fixed;
+  background: linear-gradient(to right, #0D0E10, #343A3D);
+  padding: 20px;
+  border-radius: 5px;
+  top: 0px;
+  left: 0;
+  z-index: 11;
+}
+
+/* header stylings for scrolling */
+
+
